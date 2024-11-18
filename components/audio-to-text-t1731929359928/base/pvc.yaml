@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels: 
+    app.kubernetes.io/instance: audio-to-text-t1731929359928
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: audio-to-text-t1731929359928 
+  name: audio-to-text-t1731929359928
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  resources:
+    requests:
+      storage: 100Gi
